@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We value your feedback! Please take a moment to fill out this survey.</p>
+    
+    <form id="survey-form">
+      <!-- Name -->
+      <label id="name-label" for="name">Name</label>
+      <input 
+        id="name" 
+        type="text" 
+        placeholder="Enter your name" 
+        required>
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email</label>
+      <input 
+        id="email" 
+        type="email" 
+        placeholder="Enter your email" 
+        required>
+
+      <!-- Age -->
+      <label id="number-label" for="number">Age</label>
+      <input 
+        id="number" 
+        type="number" 
+        min="10" 
+        max="100" 
+        placeholder="Enter your age" 
+        required>
+
+      <!-- Dropdown -->
+      <label for="dropdown">What is your current role?</label>
+      <select id="dropdown">
+        <option value="student">Student</option>
+        <option value="professional">Professional</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <fieldset>
+        <legend>Would you recommend our service?</legend>
+        <label>
+          <input 
+            type="radio" 
+            name="recommend" 
+            value="yes" 
+            required>
+          Yes
+        </label>
+        <label>
+          <input 
+            type="radio" 
+            name="recommend" 
+            value="no">
+          No
+        </label>
+      </fieldset>
+
+      <!-- Checkboxes -->
+      <fieldset>
+        <legend>What topics interest you? (Check all that apply)</legend>
+        <label>
+          <input 
+            type="checkbox" 
+            name="topics" 
+            value="technology">
+          Technology
+        </label>
+        <label>
+          <input 
+            type="checkbox" 
+            name="topics" 
+            value="sports">
+          Sports
+        </label>
+        <label>
+          <input 
+            type="checkbox" 
+            name="topics" 
+            value="arts">
+          Arts
+        </label>
+      </fieldset>
+
+      <!-- Textarea -->
+      <label for="comments">Additional comments</label>
+      <textarea 
+        id="comments" 
+        placeholder="Write your comments here..."></textarea>
+
+      <!-- Submit -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
